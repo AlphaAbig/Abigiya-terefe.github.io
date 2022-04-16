@@ -23,6 +23,18 @@ $(document).ready(function () {
       "linear"
     );
   });
+
+  $('#changeModeLight').on("click", function (e) {
+    $('#bodyTag').removeClass('body-dark');
+    $('#bodyTag').addClass('light');
+    console.log("body");
+  });
+  $('#changeModeDark').on("click", function (e) {
+    $('#bodyTag').removeClass('light');
+    $('#bodyTag').addClass('body-dark');
+    console.log("body");
+  });
+
 });
 
 var myMode = request.mode;
